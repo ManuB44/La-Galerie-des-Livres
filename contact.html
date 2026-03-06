@@ -11,11 +11,9 @@
 
   <header class="header">
     <div class="container nav">
-
       <a href="index.html" class="brand-link" aria-label="Retour à l’accueil">
         <div class="brand">
           <div class="brand-mark">LG</div>
-
           <div class="brand-text">
             <h1 class="logo">La Galerie des Livres</h1>
             <p class="tagline">Sélections et découvertes littéraires</p>
@@ -41,8 +39,13 @@
           vous pouvez utiliser le formulaire ci-dessous.
         </p>
 
+        <div id="success-message" class="success-message" style="display:none;">
+          Votre message a été envoyé avec succès.
+        </div>
+
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
           <input type="hidden" name="access_key" value="3b38779c-bb97-48f7-a1e6-9303a2eedcf0">
+          <input type="hidden" name="redirect" value="contact.html?success=true">
           <input type="checkbox" name="botcheck" style="display:none;">
 
           <label for="name">Nom</label>
@@ -99,6 +102,12 @@
 
     </div>
   </footer>
+
+  <script>
+    if (window.location.search.includes("success")) {
+      document.getElementById("success-message").style.display = "block";
+    }
+  </script>
 
 </body>
 </html>
