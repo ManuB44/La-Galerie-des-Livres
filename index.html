@@ -1,109 +1,222 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Galerie des Livres</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Galerie des Livres | Sélections et découvertes littéraires</title>
+  <meta name="description" content="Découvrez une galerie éditoriale de livres soigneusement sélectionnés à travers différents univers littéraires.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-<div class="container nav">
-<h1 class="logo">La Galerie des Livres</h1>
-<nav>
-<a href="index.html">Accueil</a>
-<a href="galerie.html">Galerie</a>
-<a href="#">Sélections</a>
-<a href="#">À propos</a>
-</nav>
-</div>
-</header>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand-link" aria-label="Retour à l’accueil">
+        <div class="brand">
+          <div class="brand-mark">LG</div>
+          <div class="brand-text">
+            <h1 class="logo">La Galerie des Livres</h1>
+            <p class="tagline">Sélections et découvertes littéraires</p>
+          </div>
+        </div>
+      </a>
 
-<section class="hero">
-<div class="container hero-content">
-<h2>Explorez une collection d’ouvrages soigneusement sélectionnés</h2>
-<p>Une galerie éditoriale dédiée à la découverte d’ouvrages à travers différents univers littéraires.</p>
-<a href="galerie.html" class="btn">Découvrir la collection</a>
-</div>
-</section>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="#selections">Sélections</a>
+        <a href="#apropos">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="container">
-<h2 class="section-title">Livres en vedette</h2>
+  <main>
 
-<div class="grid featured">
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Galerie éditoriale</p>
+        <h2>Explorez une collection d’ouvrages soigneusement sélectionnés</h2>
+        <p>
+          Une galerie culturelle pensée pour mettre en valeur des livres à travers différents univers
+          littéraires, avec une présentation claire, élégante et tournée vers la découverte.
+        </p>
+        <div class="hero-actions">
+          <a href="galerie.html" class="btn">Découvrir la collection</a>
+          <a href="#selections" class="btn btn-secondary">Voir les sélections</a>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<img src="images/book1.jpg">
-<h3>L'Ombre des Royaumes</h3>
-<p class="category">Fantasy</p>
-<p class="excerpt">Un voyage épique dans un monde ancien dominé par la magie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Découvrir</a>
-</div>
+    <section class="container trust-strip">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <h3>Sélections éditoriales</h3>
+          <p>Des ouvrages mis en avant selon leur univers, leur intérêt et la qualité de leur présentation.</p>
+        </div>
 
-<div class="card">
-<img src="images/book2.jpg">
-<h3>Étoiles Lointaines</h3>
-<p class="category">Science‑fiction</p>
-<p class="excerpt">Une exploration fascinante des frontières de la galaxie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Découvrir</a>
-</div>
+        <div class="trust-item">
+          <h3>Univers variés</h3>
+          <p>Romans, fantasy, science-fiction, guides, jeunesse et mystères réunis dans une même galerie.</p>
+        </div>
 
-<div class="card">
-<img src="images/book3.jpg">
-<h3>Les Jardins Oubliés</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Une histoire intime au cœur d’un domaine mystérieux.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Découvrir</a>
-</div>
+        <div class="trust-item">
+          <h3>Liens partenaires</h3>
+          <p>Chaque livre renvoie vers une plateforme externe pour consultation ou achat éventuel.</p>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<img src="images/book4.jpg">
-<h3>Le Codex Secret</h3>
-<p class="category">Mystères</p>
-<p class="excerpt">Une enquête captivante autour d’un manuscrit ancien.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Découvrir</a>
-</div>
+    <section class="container spotlight">
+      <div class="spotlight-card">
+        <div class="spotlight-text">
+          <p class="eyebrow">Sélection du moment</p>
+          <h2>Une vitrine littéraire pensée comme un catalogue vivant</h2>
+          <p>
+            La Galerie des Livres met en avant des ouvrages choisis pour leur atmosphère, leur singularité
+            et leur capacité à nourrir la curiosité du lecteur dans un cadre éditorial sobre et soigné.
+          </p>
+          <a href="galerie.html" class="btn">Voir la galerie complète</a>
+        </div>
 
-<div class="card">
-<img src="images/book5.jpg">
-<h3>Guide du Potager Naturel</h3>
-<p class="category">Guides</p>
-<p class="excerpt">Apprendre à cultiver un potager riche et durable.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Découvrir</a>
-</div>
+        <div class="spotlight-visual">
+          <div class="spotlight-box">
+            <span>Romans</span>
+            <span>Fantasy</span>
+            <span>Science-fiction</span>
+            <span>Jeunesse</span>
+            <span>Guides</span>
+            <span>Mystères</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<img src="images/book6.jpg">
-<h3>Contes des Étoiles</h3>
-<p class="category">Jeunesse</p>
-<p class="excerpt">Des histoires lumineuses pour les jeunes lecteurs.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Découvrir</a>
-</div>
+    <section class="container">
+      <h2 class="section-title">Livres en vedette</h2>
 
-</div>
-</section>
+      <div class="grid featured">
 
-<footer class="footer">
-<div class="container footer-grid">
-<div>
-<h4>Navigation</h4>
-<a href="index.html">Accueil</a>
-<a href="galerie.html">Galerie</a>
-</div>
+        <article class="card">
+          <img src="images/book1.jpg" alt="Couverture de L'Ombre des Royaumes">
+          <h3>L'Ombre des Royaumes</h3>
+          <p class="category">Fantasy</p>
+          <p class="excerpt">Un récit d’alliances fragiles, de magie ancienne et de royaumes menacés.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
+        </article>
 
-<div>
-<h4>Informations</h4>
-<a href="#">Mentions légales</a>
-<a href="#">Politique de confidentialité</a>
-</div>
+        <article class="card">
+          <img src="images/book2.jpg" alt="Couverture de Étoiles Lointaines">
+          <h3>Étoiles Lointaines</h3>
+          <p class="category">Science-fiction</p>
+          <p class="excerpt">Une traversée des frontières de la galaxie entre exploration et mystères cosmiques.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
+        </article>
 
-<div>
-<h4>Affiliation</h4>
-<p>Certains liens présents sur ce site sont des liens affiliés. Une commission peut être perçue si un achat est réalisé via ces liens.</p>
-</div>
-</div>
-</footer>
+        <article class="card">
+          <img src="images/book3.jpg" alt="Couverture de Les Jardins Oubliés">
+          <h3>Les Jardins Oubliés</h3>
+          <p class="category">Roman</p>
+          <p class="excerpt">Une histoire sensible où mémoire, silence et héritage se mêlent au fil des saisons.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
+        </article>
 
+        <article class="card">
+          <img src="images/book4.jpg" alt="Couverture de Le Codex Secret">
+          <h3>Le Codex Secret</h3>
+          <p class="category">Mystères</p>
+          <p class="excerpt">Une enquête autour d’un manuscrit ancien et de secrets enfouis dans le temps.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
+        </article>
+
+        <article class="card">
+          <img src="images/book5.jpg" alt="Couverture de Guide du Potager Naturel">
+          <h3>Guide du Potager Naturel</h3>
+          <p class="category">Guides</p>
+          <p class="excerpt">Un guide pratique pour cultiver un potager vivant, durable et cohérent avec les cycles naturels.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
+        </article>
+
+        <article class="card">
+          <img src="images/book6.jpg" alt="Couverture de Contes des Étoiles">
+          <h3>Contes des Étoiles</h3>
+          <p class="category">Jeunesse</p>
+          <p class="excerpt">Des histoires lumineuses et accessibles pensées pour éveiller l’imaginaire des jeunes lecteurs.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="container" id="selections">
+      <h2 class="section-title">Sélections éditoriales</h2>
+
+      <div class="selection-grid">
+        <div class="selection-block">
+          <h3>Nouveautés</h3>
+          <p>Une sélection dédiée aux derniers titres mis en avant dans la galerie, avec une présentation claire et actuelle.</p>
+        </div>
+
+        <div class="selection-block">
+          <h3>Recommandations</h3>
+          <p>Des ouvrages choisis pour la force de leur univers, la qualité de leur lecture et leur singularité.</p>
+        </div>
+
+        <div class="selection-block">
+          <h3>Découvertes</h3>
+          <p>Des titres variés pour enrichir la curiosité littéraire et ouvrir de nouvelles pistes de lecture.</p>
+        </div>
+      </div>
+
+      <div class="center mt-40">
+        <a href="galerie.html" class="btn">Voir toute la galerie</a>
+      </div>
+    </section>
+
+    <section class="container" id="apropos">
+      <h2 class="section-title">À propos</h2>
+      <div class="selection-block about-block">
+        <p>
+          La Galerie des Livres est une galerie éditoriale dédiée à la découverte d’ouvrages à travers
+          plusieurs univers littéraires. Le site ne vend pas directement de livres et ne fonctionne pas comme
+          une boutique. Il présente des livres sélectionnés et redirige les visiteurs vers des plateformes
+          partenaires via des liens externes.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="#selections">Sélections</a>
+        <a href="#apropos">À propos</a>
+      </div>
+
+      <div>
+        <h4>Informations</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Affiliation</h4>
+        <p>Certains liens présents sur ce site sont des liens affiliés. Une commission peut être perçue si un achat est réalisé via ces liens.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="amazon-affiliation">
+        En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

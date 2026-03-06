@@ -1,124 +1,193 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galerie | La Galerie des Livres</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie | La Galerie des Livres</title>
+  <meta name="description" content="Parcourez une galerie éditoriale de livres classés par univers littéraire.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-<div class="container nav">
-<h1 class="logo">La Galerie des Livres</h1>
-<nav>
-<a href="index.html">Accueil</a>
-<a href="galerie.html">Galerie</a>
-</nav>
-</div>
-</header>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand-link" aria-label="Retour à l’accueil">
+        <div class="brand">
+          <div class="brand-mark">LG</div>
+          <div class="brand-text">
+            <h1 class="logo">La Galerie des Livres</h1>
+            <p class="tagline">Sélections et découvertes littéraires</p>
+          </div>
+        </div>
+      </a>
 
-<section class="container">
-<h2 class="section-title">Galerie complète</h2>
-<div class="grid gallery">
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="index.html#selections">Sélections</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="card">
-<img src="images/book1.jpg">
-<h3>Livre exemple 1</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+  <main>
+    <section class="container gallery-header">
+      <p class="eyebrow">Catalogue éditorial</p>
+      <h2 class="section-title">Galerie complète</h2>
+      <p class="gallery-intro">
+        Parcourez une sélection d’ouvrages classés par univers littéraire et trouvez rapidement les titres
+        qui correspondent à vos envies de lecture.
+      </p>
 
-<div class="card">
-<img src="images/book2.jpg">
-<h3>Livre exemple 2</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+      <div class="catalog-tools">
+        <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un livre, une catégorie...">
 
-<div class="card">
-<img src="images/book3.jpg">
-<h3>Livre exemple 3</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all" type="button">Tous</button>
+          <button class="filter-btn" data-filter="roman" type="button">Romans</button>
+          <button class="filter-btn" data-filter="fantasy" type="button">Fantasy</button>
+          <button class="filter-btn" data-filter="science-fiction" type="button">Science-fiction</button>
+          <button class="filter-btn" data-filter="jeunesse" type="button">Jeunesse</button>
+          <button class="filter-btn" data-filter="guides" type="button">Guides</button>
+          <button class="filter-btn" data-filter="mystères" type="button">Mystères</button>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<img src="images/book4.jpg">
-<h3>Livre exemple 4</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+    <section class="container">
+      <div class="grid gallery" id="booksGrid">
 
-<div class="card">
-<img src="images/book5.jpg">
-<h3>Livre exemple 5</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <article class="card book-card" data-category="roman">
+          <img src="images/book1.jpg" alt="Couverture de La Maison des Marées">
+          <h3>La Maison des Marées</h3>
+          <p class="category">Roman</p>
+          <p class="excerpt">Un roman d’atmosphère où les lieux, les souvenirs et les silences façonnent peu à peu le récit.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
 
-<div class="card">
-<img src="images/book6.jpg">
-<h3>Livre exemple 6</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <article class="card book-card" data-category="fantasy">
+          <img src="images/book2.jpg" alt="Couverture de Le Royaume des Brumes">
+          <h3>Le Royaume des Brumes</h3>
+          <p class="category">Fantasy</p>
+          <p class="excerpt">Une fresque de fantasy portée par des royaumes anciens, des serments fragiles et une magie oubliée.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
 
-<div class="card">
-<img src="images/book7.jpg">
-<h3>Livre exemple 7</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <article class="card book-card" data-category="science-fiction">
+          <img src="images/book3.jpg" alt="Couverture de Orbite Noire">
+          <h3>Orbite Noire</h3>
+          <p class="category">Science-fiction</p>
+          <p class="excerpt">Un récit d’anticipation où exploration spatiale, isolement et enjeux technologiques se rencontrent.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
 
-<div class="card">
-<img src="images/book8.jpg">
-<h3>Livre exemple 8</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <article class="card book-card" data-category="mystères">
+          <img src="images/book4.jpg" alt="Couverture de Le Manuscrit de Verre">
+          <h3>Le Manuscrit de Verre</h3>
+          <p class="category">Mystères</p>
+          <p class="excerpt">Une intrigue bâtie autour d’archives anciennes, d’indices cachés et de révélations progressives.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
 
-<div class="card">
-<img src="images/book9.jpg">
-<h3>Livre exemple 9</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <article class="card book-card" data-category="guides">
+          <img src="images/book5.jpg" alt="Couverture de Potager Vivant">
+          <h3>Potager Vivant</h3>
+          <p class="category">Guides</p>
+          <p class="excerpt">Un guide pratique centré sur une approche simple, durable et structurée du jardin nourricier.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
 
-<div class="card">
-<img src="images/book10.jpg">
-<h3>Livre exemple 10</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <article class="card book-card" data-category="jeunesse">
+          <img src="images/book6.jpg" alt="Couverture de La Forêt des Lanternes">
+          <h3>La Forêt des Lanternes</h3>
+          <p class="category">Jeunesse</p>
+          <p class="excerpt">Une lecture jeunesse tournée vers l’émerveillement, l’aventure et la découverte d’un monde lumineux.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
 
-<div class="card">
-<img src="images/book11.jpg">
-<h3>Livre exemple 11</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <article class="card book-card" data-category="roman">
+          <img src="images/book7.jpg" alt="Couverture de Les Héritiers du Silence">
+          <h3>Les Héritiers du Silence</h3>
+          <p class="category">Roman</p>
+          <p class="excerpt">Un roman où les relations familiales, les secrets et le passé composent une tension feutrée.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
 
-<div class="card">
-<img src="images/book12.jpg">
-<h3>Livre exemple 12</h3>
-<p class="category">Roman</p>
-<p class="excerpt">Présentation d’un ouvrage sélectionné dans la galerie.</p>
-<a class="btn" href="https://amazon.fr" target="_blank">Voir l’ouvrage</a>
-</div>
+        <article class="card book-card" data-category="fantasy">
+          <img src="images/book8.jpg" alt="Couverture de La Cité des Cendres Bleues">
+          <h3>La Cité des Cendres Bleues</h3>
+          <p class="category">Fantasy</p>
+          <p class="excerpt">Une aventure de fantasy bâtie sur une cité mythique, des conflits anciens et des pouvoirs instables.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
 
-</div>
-</section>
+        <article class="card book-card" data-category="science-fiction">
+          <img src="images/book9.jpg" alt="Couverture de Les Archives de Titan">
+          <h3>Les Archives de Titan</h3>
+          <p class="category">Science-fiction</p>
+          <p class="excerpt">Un titre orienté vers les grands imaginaires scientifiques, l’exploration et la mémoire des mondes.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
+
+        <article class="card book-card" data-category="mystères">
+          <img src="images/book10.jpg" alt="Couverture de La Chambre des Cartes">
+          <h3>La Chambre des Cartes</h3>
+          <p class="category">Mystères</p>
+          <p class="excerpt">Une enquête élégante autour de documents rares, de pistes oubliées et de secrets méthodiquement enfouis.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
+
+        <article class="card book-card" data-category="guides">
+          <img src="images/book11.jpg" alt="Couverture de Cultiver au Fil des Saisons">
+          <h3>Cultiver au Fil des Saisons</h3>
+          <p class="category">Guides</p>
+          <p class="excerpt">Un guide structuré pour mieux comprendre l’organisation, le rythme et les gestes utiles au jardin.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
+
+        <article class="card book-card" data-category="jeunesse">
+          <img src="images/book12.jpg" alt="Couverture de Les Veilleurs du Ciel">
+          <h3>Les Veilleurs du Ciel</h3>
+          <p class="category">Jeunesse</p>
+          <p class="excerpt">Une lecture familiale mêlant aventure, imagination et découverte dans un univers accessible.</p>
+          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Voir l’ouvrage</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="index.html#selections">Sélections</a>
+        <a href="index.html#apropos">À propos</a>
+      </div>
+
+      <div>
+        <h4>Informations</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Affiliation</h4>
+        <p>Certains liens présents sur ce site sont des liens affiliés. Une commission peut être perçue si un achat est réalisé via ces liens.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="amazon-affiliation">
+        En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
