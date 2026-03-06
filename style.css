@@ -621,3 +621,57 @@ section {
     height: 42px;
   }
 }
+
+/* =========================
+   FORMULAIRE CONTACT
+========================= */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+  max-width: 520px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #3d2f23;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d8c8b4;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: rgba(255, 250, 243, 0.94);
+  color: #2b2118;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a36a3f;
+  box-shadow: 0 0 0 4px rgba(163, 106, 63, 0.10);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.contact-form .btn {
+  width: 220px;
+  margin-top: 8px;
+}
+
+.contact-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 30px;
+}

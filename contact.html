@@ -1,122 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | La Galerie des Livres</title>
-<meta name="description" content="Contactez La Galerie des Livres.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | La Galerie des Livres</title>
+  <meta name="description" content="Contactez La Galerie des Livres.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="header">
-<div class="container nav">
+  <header class="header">
+    <div class="container nav">
 
-<a href="index.html" class="brand-link" aria-label="Retour à l’accueil">
-<div class="brand">
-<div class="brand-mark">LG</div>
+      <a href="index.html" class="brand-link" aria-label="Retour à l’accueil">
+        <div class="brand">
+          <div class="brand-mark">LG</div>
 
-<div class="brand-text">
-<h1 class="logo">La Galerie des Livres</h1>
-<p class="tagline">Sélections et découvertes littéraires</p>
-</div>
+          <div class="brand-text">
+            <h1 class="logo">La Galerie des Livres</h1>
+            <p class="tagline">Sélections et découvertes littéraires</p>
+          </div>
+        </div>
+      </a>
 
-</div>
-</a>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-<a href="index.html">Accueil</a>
-<a href="galerie.html">Galerie</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <main>
+    <section class="container page-simple">
+      <h2 class="section-title">Contact</h2>
 
-</div>
-</header>
+      <div class="page-card">
+        <p>
+          Pour toute demande concernant le site ou un partenariat,
+          vous pouvez utiliser le formulaire ci-dessous.
+        </p>
 
-<main>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="3b38779c-bb97-48f7-a1e6-9303a2eedcf0">
+          <input type="checkbox" name="botcheck" style="display:none;">
 
-<section class="container page-simple">
+          <label for="name">Nom</label>
+          <input id="name" type="text" name="name" required>
 
-<h2 class="section-title">Contact</h2>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required>
 
-<div class="page-card">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
 
-<p>
-Pour toute demande concernant le site ou un partenariat,
-vous pouvez utiliser le formulaire ci-dessous.
-</p>
+          <button type="submit" class="btn">Envoyer le message</button>
+        </form>
 
-<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <div class="contact-list">
+          <p><strong>Nom :</strong> La Galerie des Livres</p>
+          <p><strong>Email :</strong> contact@galeriedeslivres.fr</p>
+          <p><strong>Objet :</strong> informations, partenariat, demande générale</p>
+        </div>
 
-<input type="hidden" name="access_key" value="3b38779c-bb97-48f7-a1e6-9303a2eedcf0">
+        <h3>Remarque</h3>
 
-<input type="checkbox" name="botcheck" style="display:none;">
+        <p>
+          La Galerie des Livres est une galerie éditoriale de recommandations littéraires.
+          Le site ne vend pas directement d’ouvrages.
+        </p>
+      </div>
+    </section>
+  </main>
 
-<label>Nom</label>
-<input type="text" name="name" required>
+  <footer class="footer">
+    <div class="container footer-grid">
 
-<label>Email</label>
-<input type="email" name="email" required>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="galerie.html">Galerie</a>
+      </div>
 
-<label>Message</label>
-<textarea name="message" rows="6" required></textarea>
+      <div>
+        <h4>Informations</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
 
-<button type="submit" class="btn">Envoyer le message</button>
+      <div>
+        <h4>Affiliation</h4>
+        <p>
+          Certains liens présents sur ce site sont des liens affiliés.
+          Une commission peut être perçue si un achat est réalisé via ces liens.
+        </p>
+      </div>
 
-</form>
-
-<div class="contact-list">
-
-<p><strong>Nom :</strong> La Galerie des Livres</p>
-
-<p><strong>Email :</strong> contact@galeriedeslivres.fr</p>
-
-<p><strong>Objet :</strong> informations, partenariat, demande générale</p>
-
-</div>
-
-<h3>Remarque</h3>
-
-<p>
-La Galerie des Livres est une galerie éditoriale de recommandations littéraires.
-Le site ne vend pas directement d’ouvrages.
-</p>
-
-</div>
-
-</section>
-
-</main>
-
-<footer class="footer">
-
-<div class="container footer-grid">
-
-<div>
-<h4>Navigation</h4>
-<a href="index.html">Accueil</a>
-<a href="galerie.html">Galerie</a>
-</div>
-
-<div>
-<h4>Informations</h4>
-<a href="mentions-legales.html">Mentions légales</a>
-<a href="politique-confidentialite.html">Politique de confidentialité</a>
-<a href="contact.html">Contact</a>
-</div>
-
-<div>
-<h4>Affiliation</h4>
-<p>
-Certains liens présents sur ce site sont des liens affiliés.
-Une commission peut être perçue si un achat est réalisé via ces liens.
-</p>
-</div>
-
-</div>
-
-</footer>
+    </div>
+  </footer>
 
 </body>
 </html>
