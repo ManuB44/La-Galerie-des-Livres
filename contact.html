@@ -1,78 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | La Galerie des Livres</title>
-  <meta name="description" content="Contactez La Galerie des Livres.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | La Galerie des Livres</title>
+<meta name="description" content="Contactez La Galerie des Livres.">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="header">
-    <div class="container nav">
-      <a href="index.html" class="brand-link" aria-label="Retour à l’accueil">
-        <div class="brand">
-          <div class="brand-mark">LG</div>
-          <div class="brand-text">
-            <h1 class="logo">La Galerie des Livres</h1>
-            <p class="tagline">Sélections et découvertes littéraires</p>
-          </div>
-        </div>
-      </a>
+<header class="header">
+<div class="container nav">
 
-      <nav>
-        <a href="index.html">Accueil</a>
-        <a href="galerie.html">Galerie</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<a href="index.html" class="brand-link" aria-label="Retour à l’accueil">
+<div class="brand">
+<div class="brand-mark">LG</div>
 
-  <main>
-    <section class="container page-simple">
-      <h2 class="section-title">Contact</h2>
+<div class="brand-text">
+<h1 class="logo">La Galerie des Livres</h1>
+<p class="tagline">Sélections et découvertes littéraires</p>
+</div>
 
-      <div class="page-card">
-        <p>
-          Pour toute demande concernant le site, ses contenus ou ses informations éditoriales,
-          vous pouvez utiliser les coordonnées ci-dessous.
-        </p>
+</div>
+</a>
 
-        <div class="contact-list">
-          <p><strong>Nom :</strong> Emmanuel Bourdais</p>
-          <p><strong>E-mail :</strong> [ton-adresse-email]</p>
-          <p><strong>Objet :</strong> informations, partenariat, demande générale</p>
-        </div>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="galerie.html">Galerie</a>
+<a href="contact.html">Contact</a>
+</nav>
 
-        <h2>Remarque</h2>
-        <p>
-          La Galerie des Livres est une galerie éditoriale de recommandations littéraires.
-          Le site ne vend pas directement d’ouvrages.
-        </p>
-      </div>
-    </section>
-  </main>
+</div>
+</header>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>Navigation</h4>
-        <a href="index.html">Accueil</a>
-        <a href="galerie.html">Galerie</a>
-      </div>
-      <div>
-        <h4>Informations</h4>
-        <a href="mentions-legales.html">Mentions légales</a>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h4>Affiliation</h4>
-        <p>Certains liens présents sur ce site sont des liens affiliés. Une commission peut être perçue si un achat est réalisé via ces liens.</p>
-      </div>
-    </div>
-  </footer>
+<main>
+
+<section class="container page-simple">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="page-card">
+
+<p>
+Pour toute demande concernant le site ou un partenariat,
+vous pouvez utiliser le formulaire ci-dessous.
+</p>
+
+<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+<input type="hidden" name="access_key" value="3b38779c-bb97-48f7-a1e6-9303a2eedcf0">
+
+<input type="checkbox" name="botcheck" style="display:none;">
+
+<label>Nom</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Message</label>
+<textarea name="message" rows="6" required></textarea>
+
+<button type="submit" class="btn">Envoyer le message</button>
+
+</form>
+
+<div class="contact-list">
+
+<p><strong>Nom :</strong> Emmanuel Bourdais</p>
+
+<p><strong>Email :</strong> contact@galeriedeslivres.fr</p>
+
+<p><strong>Objet :</strong> informations, partenariat, demande générale</p>
+
+</div>
+
+<h3>Remarque</h3>
+
+<p>
+La Galerie des Livres est une galerie éditoriale de recommandations littéraires.
+Le site ne vend pas directement d’ouvrages.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+<div>
+<h4>Navigation</h4>
+<a href="index.html">Accueil</a>
+<a href="galerie.html">Galerie</a>
+</div>
+
+<div>
+<h4>Informations</h4>
+<a href="mentions-legales.html">Mentions légales</a>
+<a href="politique-confidentialite.html">Politique de confidentialité</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div>
+<h4>Affiliation</h4>
+<p>
+Certains liens présents sur ce site sont des liens affiliés.
+Une commission peut être perçue si un achat est réalisé via ces liens.
+</p>
+</div>
+
+</div>
+
+</footer>
 
 </body>
 </html>
