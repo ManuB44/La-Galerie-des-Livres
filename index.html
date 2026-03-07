@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Galerie des Livres | Sélections et découvertes littéraires</title>
+  <title>Galerie de livres recommandés – Romans, Fantasy, Science-fiction, Guides</title>
   <meta name="description" content="Découvrez une galerie éditoriale de livres soigneusement sélectionnés à travers différents univers littéraires.">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -33,18 +33,127 @@
 
   <main>
 
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Galerie éditoriale</p>
-        <h2>Explorez une collection d’ouvrages soigneusement sélectionnés</h2>
-        <p>
-          Une galerie culturelle pensée pour mettre en valeur des livres à travers différents univers
-          littéraires, avec une présentation claire, élégante et tournée vers la découverte.
-        </p>
-        <div class="hero-actions">
-          <a href="galerie.html" class="btn">Découvrir la collection</a>
-          <a href="#selections" class="btn btn-secondary">Voir les sélections</a>
+   <section class="hero">
+  <div class="container hero-content">
+    <p class="eyebrow">Galerie éditoriale</p>
+    <h2>Découvrez des livres à travers différents univers</h2>
+    <p>
+      Découvrez des livres sélectionnés pour la richesse de leur univers et le plaisir de la lecture.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#decouvrir" class="btn">Voir les livres</a>
+      <a href="galerie.html" class="btn btn-secondary">Galerie complète</a>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Livres à découvrir</h2>
+
+  <p class="gallery-intro">
+      Une sélection de livres choisis pour la richesse de leur univers.  </p>
+
+  <div class="grid featured">
+
+    <article class="card book-card" data-category="fantasy">
+
+      <a href="https://amzn.to/47ponQ3" target="_blank" rel="nofollow sponsored noopener">
+        <img src="images/le-royaume-des-ombres.jpg" alt="Le Royaume des Ombres – Tenebräe">
+      </a>
+
+      <h3>Le Royaume des Ombres – Tenebräe</h3>
+
+      <p class="category">Fantasy</p>
+
+      <p class="excerpt">
+      Dans un monde où les ténèbres gagnent du terrain, des forces anciennes
+      se réveillent et menacent l’équilibre des royaumes.
+      </p>
+
+      <a class="btn" href="https://amzn.to/47ponQ3" target="_blank" rel="nofollow sponsored noopener">
+        Voir sur Amazon
+      </a>
+
+    </article>
+
+    <article class="card book-card" data-category="roman">
+
+      <a href="https://amzn.to/40d805p" target="_blank" rel="nofollow sponsored noopener">
+        <img src="images/juste-apres-lorage.jpg" alt="Couverture du livre Juste après l’orage">
+      </a>
+
+      <h3>Juste après l’orage</h3>
+
+      <p class="category">Roman</p>
+
+      <p class="excerpt">
+      Un récit touchant sur la résilience et la reconstruction après les tempêtes de la vie.
+      </p>
+
+      <a class="btn" href="https://amzn.to/40d805p" target="_blank" rel="nofollow sponsored noopener">
+        Voir sur Amazon
+      </a>
+
+    </article>
+
+    <article class="card book-card" data-category="guides">
+
+      <a href="https://amzn.to/4bt3hCT" target="_blank" rel="nofollow sponsored noopener">
+        <img src="images/le-potager-bible.jpg" alt="Le Potager, la bible pour débuter">
+      </a>
+
+      <h3>Le Potager, la bible pour débuter</h3>
+
+      <p class="category">Guide jardin</p>
+
+      <p class="excerpt">
+      Un guide clair pour apprendre à créer et entretenir un potager productif.
+      </p>
+
+      <a class="btn" href="https://amzn.to/4bt3hCT" target="_blank" rel="nofollow sponsored noopener">
+        Voir sur Amazon
+      </a>
+
+    </article>
+
+    </div>
+    <section class="container mini-info">
+      <p class="gallery-intro">
+      Cliquez sur un livre pour consulter sa fiche complète et découvrir l’histoire.
+      </p>
+    
+      <section class="container" id="selections">
+      <h2 class="section-title">Sélections éditoriales</h2>
+
+      <div class="selection-grid">
+        <div class="selection-block">
+          <h3>Nouveautés</h3>
+          <p>
+            Retrouvez ici les derniers titres ajoutés à la galerie,
+            présentés de manière claire et actuelle pour une découverte rapide.
+          </p>
         </div>
+
+        <div class="selection-block">
+          <h3>Recommandations</h3>
+          <p>
+            Une sélection d’ouvrages retenus pour la richesse de leur univers,
+            la qualité de leur écriture et leur singularité.
+          </p>
+        </div>
+
+        <div class="selection-block">
+          <h3>Découvertes</h3>
+          <p>
+            Des livres choisis pour éveiller la curiosité littéraire
+            et ouvrir de nouvelles pistes de lecture.
+          </p>
+        </div>
+      </div>
+
+      <div class="center mt-40">
+        <a href="galerie.html" class="btn">Voir toute la galerie</a>
       </div>
     </section>
 
@@ -91,88 +200,7 @@
         </div>
       </div>
     </section>
-
-    <section class="container">
-      <h2 class="section-title">Livres en vedette</h2>
-
-      <div class="grid featured">
-
-        <article class="card">
-          <img src="images/book1.jpg" alt="Couverture de L'Ombre des Royaumes">
-          <h3>L'Ombre des Royaumes</h3>
-          <p class="category">Fantasy</p>
-          <p class="excerpt">Un récit d’alliances fragiles, de magie ancienne et de royaumes menacés.</p>
-          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
-        </article>
-
-        <article class="card">
-          <img src="images/book2.jpg" alt="Couverture de Étoiles Lointaines">
-          <h3>Étoiles Lointaines</h3>
-          <p class="category">Science-fiction</p>
-          <p class="excerpt">Une traversée des frontières de la galaxie entre exploration et mystères cosmiques.</p>
-          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
-        </article>
-
-        <article class="card">
-          <img src="images/book3.jpg" alt="Couverture de Les Jardins Oubliés">
-          <h3>Les Jardins Oubliés</h3>
-          <p class="category">Roman</p>
-          <p class="excerpt">Une histoire sensible où mémoire, silence et héritage se mêlent au fil des saisons.</p>
-          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
-        </article>
-
-        <article class="card">
-          <img src="images/book4.jpg" alt="Couverture de Le Codex Secret">
-          <h3>Le Codex Secret</h3>
-          <p class="category">Mystères</p>
-          <p class="excerpt">Une enquête autour d’un manuscrit ancien et de secrets enfouis dans le temps.</p>
-          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
-        </article>
-
-        <article class="card">
-          <img src="images/book5.jpg" alt="Couverture de Guide du Potager Naturel">
-          <h3>Guide du Potager Naturel</h3>
-          <p class="category">Guides</p>
-          <p class="excerpt">Un guide pratique pour cultiver un potager vivant, durable et cohérent avec les cycles naturels.</p>
-          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
-        </article>
-
-        <article class="card">
-          <img src="images/book6.jpg" alt="Couverture de Contes des Étoiles">
-          <h3>Contes des Étoiles</h3>
-          <p class="category">Jeunesse</p>
-          <p class="excerpt">Des histoires lumineuses et accessibles pensées pour éveiller l’imaginaire des jeunes lecteurs.</p>
-          <a class="btn" href="https://www.amazon.fr/dp/XXXXXXXXXX?tag=galeriedesliv-21" target="_blank" rel="nofollow sponsored noopener">Découvrir</a>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="container" id="selections">
-      <h2 class="section-title">Sélections éditoriales</h2>
-
-      <div class="selection-grid">
-        <div class="selection-block">
-          <h3>Nouveautés</h3>
-          <p>Une sélection dédiée aux derniers titres mis en avant dans la galerie, avec une présentation claire et actuelle.</p>
-        </div>
-
-        <div class="selection-block">
-          <h3>Recommandations</h3>
-          <p>Des ouvrages choisis pour la force de leur univers, la qualité de leur lecture et leur singularité.</p>
-        </div>
-
-        <div class="selection-block">
-          <h3>Découvertes</h3>
-          <p>Des titres variés pour enrichir la curiosité littéraire et ouvrir de nouvelles pistes de lecture.</p>
-        </div>
-      </div>
-
-      <div class="center mt-40">
-        <a href="galerie.html" class="btn">Voir toute la galerie</a>
-      </div>
-    </section>
-
+    
     <section class="container" id="apropos">
       <h2 class="section-title">À propos</h2>
       <div class="selection-block about-block">
