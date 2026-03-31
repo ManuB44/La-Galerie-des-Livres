@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galerie | La Galerie des Livres</title>
-<meta name="description" content="Parcourez une sélection d’ouvrages classés par univers littéraire et trouvez rapidement les titres qui correspondent à vos envies de lecture.">
+  <meta
+    name="description"
+    content="Parcourez une sélection d’ouvrages classés par univers littéraire et trouvez rapidement les titres qui correspondent à vos envies de lecture."
+  >
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
@@ -24,7 +26,7 @@
 
       <nav>
         <a href="index.html">Accueil</a>
-        <a href="galerie.html">Galerie</a>
+        <a href="galerie.html" aria-current="page">Galerie</a>
         <a href="index.html#selections">Sélections</a>
         <a href="index.html#apropos">À propos</a>
         <a href="contact.html">Contact</a>
@@ -37,11 +39,17 @@
       <p class="eyebrow">Catalogue éditorial</p>
       <h2 class="section-title">Galerie complète</h2>
       <p class="gallery-intro">
-      Parcourez une sélection d’ouvrages classés par univers littéraire et trouvez rapidement les titres qui correspondent à vos envies de lecture.
+        Parcourez une sélection d’ouvrages classés par univers littéraire et trouvez rapidement les titres qui correspondent à vos envies de lecture.
       </p>
 
       <div class="catalog-tools">
-        <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un livre, une catégorie...">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Rechercher un livre, une catégorie..."
+          aria-label="Rechercher un livre"
+        >
 
         <div class="filter-buttons">
           <button class="filter-btn active" data-filter="all" type="button">Tous</button>
@@ -50,7 +58,7 @@
           <button class="filter-btn" data-filter="science-fiction" type="button">Science-fiction</button>
           <button class="filter-btn" data-filter="jeunesse" type="button">Jeunesse</button>
           <button class="filter-btn" data-filter="guides" type="button">Guides</button>
-          <button class="filter-btn" data-filter="mystères" type="button">Mystères</button>
+          <button class="filter-btn" data-filter="mysteres" type="button">Mystères</button>
         </div>
       </div>
     </section>
@@ -58,579 +66,661 @@
     <section class="container">
       <div class="grid gallery" id="booksGrid">
 
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/4cdvFcy" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/le-silence-des-disparus.jpg" alt="Le Silence des Disparus">
+          </a>
+          <h3>Le Silence des Disparus</h3>
+          <p class="category">Mystère / Thriller</p>
+          <p class="excerpt">
+            Dans une petite ville bordée par un lac inquiétant, des disparitions inexpliquées
+            refont surface. Lucille, déterminée à comprendre ce qui se cache sous les eaux,
+            se lance dans une enquête où chaque indice révèle des secrets anciens.
+            Entre atmosphère oppressante et révélations troublantes, la vérité pourrait
+            être bien plus sombre que prévu.
+          </p>
+          <a class="btn" href="https://amzn.to/4cdvFcy" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/47Anbtn" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/bibliotheque-perdue-alchimiste.jpg" alt="La bibliothèque perdue de l'alchimiste">
+          </a>
+          <h3>La bibliothèque perdue de l'alchimiste</h3>
+          <p class="category">Mystère / Historique / Aventure</p>
+          <p class="excerpt">
+            Au cœur du Moyen Âge, la disparition d’une reine plonge les royaumes dans le chaos.
+            Chargé de percer ce mystère, un marchand de reliques aux méthodes troubles découvre
+            un secret lié à un manuscrit maudit convoité pour son pouvoir. Entre complots, alchimie
+            et forces obscures, une quête dangereuse s’engage.
+          </p>
+          <a class="btn" href="https://amzn.to/47Anbtn" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/3NDi3Oy" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/jeunes-disparues.jpg" alt="Jeunes disparues">
+          </a>
+          <h3>Jeunes disparues</h3>
+          <p class="category">Mystère / Thriller</p>
+          <p class="excerpt">
+            Lorsqu’une jeune fille disparaît dans une petite ville en apparence tranquille,
+            l’inspectrice Josie Quinn découvre une affaire bien plus sombre qu’elle ne l’imaginait.
+            Entre victimes oubliées, secrets enfouis et danger imminent, une course contre la montre
+            s’engage pour empêcher de nouvelles disparitions.
+          </p>
+          <a class="btn" href="https://amzn.to/3NDi3Oy" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="roman">
+          <a href="https://amzn.to/3PSX1fk" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/la-fille-etait-une-ombre.jpg" alt="La fille était une ombre">
+          </a>
+          <h3>La fille était une ombre</h3>
+          <p class="category">Roman / Psychologique / Mystère</p>
+          <p class="excerpt">
+            Lorsqu’une patiente troublante entre dans son cabinet, Evelyn sent que quelque chose ne tourne pas rond.
+            Entre silences inquiétants et souvenirs fragiles, une tension s’installe peu à peu.
+            Dans ce roman psychologique, vérité et illusion se confondent, révélant un jeu dangereux
+            où chaque identité pourrait être un mensonge.
+          </p>
+          <a class="btn" href="https://amzn.to/3PSX1fk" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="roman">
+          <a href="https://amzn.to/4c1YgR3" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/autant-en-emporte-le-vent.jpg" alt="Autant en emporte le vent">
+          </a>
+          <h3>Autant en emporte le vent</h3>
+          <p class="category">Roman / Historique / Romance</p>
+          <p class="excerpt">
+            Fresque monumentale sur fond de guerre de Sécession, ce roman suit le destin
+            de Scarlett O’Hara, jeune femme déterminée à survivre dans un monde en ruine.
+            Entre passion, ambition et tragédie, son histoire d’amour avec Rhett Butler
+            est devenue l’une des plus marquantes de la littérature.
+          </p>
+          <a class="btn" href="https://amzn.to/4c1YgR3" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/4v2MZbB" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/sombre-solstice-tome1.jpg" alt="Sombre Solstice - Tome 1">
+          </a>
+          <h3>Sombre Solstice - Tome 1</h3>
+          <p class="category">Mystère / Thriller / Surnaturel</p>
+          <p class="excerpt">
+            Lors d’un voyage entre amis, une randonnée tourne au cauchemar lorsqu’ils découvrent
+            un lac inexistant sur les cartes et un village abandonné qui semble s’animer la nuit.
+            Entre phénomènes étranges, tensions et secrets, une atmosphère sombre s’installe à
+            l’approche du solstice, où la frontière entre réalité et horreur disparaît peu à peu.
+          </p>
+          <a class="btn" href="https://amzn.to/4v2MZbB" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/4m3isX5" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/sombre-solstice-tome2.jpg" alt="Sombre Solstice - Tome 2">
+          </a>
+          <h3>Sombre Solstice - Tome 2</h3>
+          <p class="category">Mystère / Thriller / Surnaturel</p>
+          <p class="excerpt">
+            Piégés dans un cauchemar qui ne cesse de s’intensifier, Joshua et ses amis
+            comprennent que le lac-tempête n’était que le début. Entre visions troublantes,
+            secrets du village et forces obscures liées au solstice, ils doivent percer la vérité
+            avant qu’il ne soit trop tard.
+          </p>
+          <a class="btn" href="https://amzn.to/4m3isX5" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="guides">
+          <a href="https://amzn.to/4cdv8ay" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/tdah-tsa-adulte-survie.jpg" alt="TDAH & TSA chez l’adulte : Le livre de survie anti-stress">
+          </a>
+          <h3>TDAH & TSA chez l’adulte : Le livre de survie anti-stress</h3>
+          <p class="category">Guide / Développement personnel</p>
+          <p class="excerpt">
+            Un guide concret et accessible pensé pour les adultes neuroatypiques.
+            Il propose des routines simples, des outils pratiques et des stratégies
+            pour mieux gérer le stress, la charge mentale et l’organisation au quotidien,
+            sans méthodes complexes ni irréalistes.
+          </p>
+          <a class="btn" href="https://amzn.to/4cdv8ay" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="jeunesse">
+          <a href="https://amzn.to/3PFuuKo" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/parce-que-tu-es-un-garcon-special.jpg" alt="Parce que tu es un garçon spécial">
+          </a>
+          <h3>Parce que tu es un garçon spécial</h3>
+          <p class="category">Jeunesse / Développement personnel</p>
+          <p class="excerpt">
+            Un livre positif et encourageant qui aide les jeunes garçons à croire en eux,
+            à développer leur confiance et à reconnaître leur valeur. À travers des messages
+            inspirants et bienveillants, il rappelle que chacun possède une force unique
+            et la capacité de grandir avec courage.
+          </p>
+          <a class="btn" href="https://amzn.to/3PFuuKo" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="jeunesse">
+          <a href="https://amzn.to/4bY26ur" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/parce-que-tu-es-une-fille-speciale.jpg" alt="Parce que tu es une fille spéciale">
+          </a>
+          <h3>Parce que tu es une fille spéciale</h3>
+          <p class="category">Jeunesse / Développement personnel</p>
+          <p class="excerpt">
+            Un livre inspirant qui aide les jeunes filles à prendre confiance en elles,
+            à surmonter leurs peurs et à croire en leur valeur. À travers des histoires
+            positives et motivantes, il rappelle que chacune est unique et capable
+            d’accomplir de grandes choses.
+          </p>
+          <a class="btn" href="https://amzn.to/4bY26ur" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="science-fiction">
+          <a href="https://amzn.to/4bXA2XQ" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/les-voyageurs-espace-dun-an.jpg" alt="L'Espace d'un an - Les Voyageurs">
+          </a>
+          <h3>L'Espace d'un an – Les Voyageurs</h3>
+          <p class="category">Science-fiction</p>
+          <p class="excerpt">
+            À bord d’un vaisseau creusant des tunnels dans l’espace, une jeune recrue découvre
+            un équipage aussi étrange qu’attachant, composé de multiples espèces venues de toute la galaxie.
+            Entre voyages, rencontres et secrets, cette aventure explore les liens humains, l’identité
+            et la vie en communauté dans un univers riche et profondément humain.
+          </p>
+          <a class="btn" href="https://amzn.to/4bXA2XQ" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="fantasy">
+          <a href="https://amzn.to/41CKgIs" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/le-talisman-des-ames.jpg" alt="Le Talisman des âmes">
+          </a>
+          <h3>Le Talisman des âmes</h3>
+          <p class="category">Fantasy / Aventure</p>
+          <p class="excerpt">
+            Après l’assassinat d’une princesse, un chevalier se lance dans une quête
+            interdite pour découvrir la vérité. Grâce à un talisman capable de ramener
+            les âmes des morts, il plonge dans un monde sombre où complots, magie et
+            esprits oubliés menacent l’équilibre du royaume.
+          </p>
+          <a class="btn" href="https://amzn.to/41CKgIs" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="fantasy">
+          <a href="https://amzn.to/4sBo51c" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/arbre-au-bout-du-monde.jpg" alt="L'Arbre Au Bout Du Monde">
+          </a>
+          <h3>L'Arbre Au Bout Du Monde</h3>
+          <p class="category">Fantasy / Aventure</p>
+          <p class="excerpt">
+            Au-delà des terres connues, un arbre mythique se dresse aux frontières du monde.
+            Attiré par les légendes qui l’entourent, un voyageur entame une quête périlleuse
+            où créatures anciennes, secrets oubliés et destin exceptionnel s’entrelacent.
+          </p>
+          <a class="btn" href="https://amzn.to/4sBo51c" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
         <article class="card book-card" data-category="roman">
           <a href="https://amzn.to/3P4FQHf" target="_blank" rel="nofollow sponsored noopener">
             <img src="images/devorer-le-ciel.jpg" alt="Dévorer le ciel - Paolo Giordano">
           </a>
-
           <h3>Dévorer le ciel</h3>
           <p class="category">Roman</p>
-
           <p class="excerpt">
             Un roman d’atmosphère sur la jeunesse, les idéaux et les amitiés
             qui façonnent une vie. Une rencontre estivale bouleverse Teresa
             et marque plusieurs années de choix, de passions et de désillusions.
           </p>
-
           <a class="btn" href="https://amzn.to/3P4FQHf" target="_blank" rel="nofollow sponsored noopener">
             Voir sur Amazon
           </a>
         </article>
-      
+
         <article class="card book-card" data-category="fantasy">
-
           <a href="https://amzn.to/4d8CH37" target="_blank" rel="nofollow sponsored noopener">
-          <img src="images/le-royaume-des-ombres.jpg" alt="Le Royaume des Ombres – Tenebräe">
+            <img src="images/le-royaume-des-ombres.jpg" alt="Le Royaume des Ombres – Tenebräe">
           </a>
-
           <h3>Le Royaume des Ombres – Tenebräe</h3>
-
           <p class="category">Fantasy</p>
-
           <p class="excerpt">
-          Dans un monde où les ténèbres gagnent du terrain, des forces anciennes
-          se réveillent et menacent l’équilibre des royaumes. Entre complots,
-          pouvoirs occultes et destin héroïque, une lutte s’engage dans l’ombre.
+            Dans un monde où les ténèbres gagnent du terrain, des forces anciennes
+            se réveillent et menacent l’équilibre des royaumes. Entre complots,
+            pouvoirs occultes et destin héroïque, une lutte s’engage dans l’ombre.
           </p>
-
           <a class="btn" href="https://amzn.to/4d8CH37" target="_blank" rel="nofollow sponsored noopener">
-          Voir sur Amazon
+            Voir sur Amazon
           </a>
+        </article>
 
-          </article>
-        
         <article class="card book-card" data-category="roman">
           <a href="https://amzn.to/4sy5pza" target="_blank" rel="nofollow sponsored noopener">
-            <img src="images/La femme de ménage voit tout.jpg" alt="La femme de ménage voit tout - Paolo Giordano">
+            <img src="images/La femme de ménage voit tout.jpg" alt="La femme de ménage voit tout">
           </a>
-
           <h3>La femme de ménage voit tout</h3>
           <p class="category">Roman</p>
-
           <p class="excerpt">
             Un thriller domestique où une vie paisible se fissure peu à peu.
             Dans une impasse tranquille, Millie commence à douter de ses voisins
             lorsque d’étranges bruits se font entendre chaque nuit.
           </p>
-
           <a class="btn" href="https://amzn.to/3ORNapM" target="_blank" rel="nofollow sponsored noopener">
             Voir sur Amazon
           </a>
         </article>
 
         <article class="card book-card" data-category="roman">
-
           <a href="https://amzn.to/4spuA6F" target="_blank" rel="nofollow sponsored noopener">
-          <img src="images/dans-le-coeur-la-ou-tu-demeures.jpg" alt="Dans le cœur, là où tu demeures">
+            <img src="images/dans-le-coeur-la-ou-tu-demeures.jpg" alt="Dans le cœur, là où tu demeures">
           </a>
-
           <h3>Dans le cœur, là où tu demeures</h3>
-
           <p class="category">Roman</p>
-
           <p class="excerpt">
-          Un récit sensible sur les liens humains,
-          les souvenirs et les choix qui marquent
-          une vie. Une histoire intime portée
-          par les émotions et les rencontres.
+            Un récit sensible sur les liens humains,
+            les souvenirs et les choix qui marquent
+            une vie. Une histoire intime portée
+            par les émotions et les rencontres.
           </p>
-
           <a class="btn" href="https://amzn.to/4spuA6F" target="_blank" rel="nofollow sponsored noopener">
-          Voir sur Amazon
+            Voir sur Amazon
           </a>
-
-          </article>
+        </article>
 
         <article class="card book-card" data-category="roman">
-
-        <a href="https://amzn.to/3P25zjB" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/la-prisonniere-du-highlander.jpg" alt="La Prisonnière du Highlander">
-        </a>
-
-        <h3>La Prisonnière du Highlander</h3>
-
-        <p class="category">Romance historique</p>
-
-        <p class="excerpt">
-        Capturée dans l’Écosse des clans, une jeune femme voit
-        son destin bouleversé lorsqu’un redoutable highlander
-        entre dans sa vie. Entre danger, passion et loyauté,
-        leurs chemins pourraient bien se rejoindre.
-        </p>
-
-        <a class="btn" href="https://amzn.to/3P25zjB" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
+          <a href="https://amzn.to/3P25zjB" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/la-prisonniere-du-highlander.jpg" alt="La Prisonnière du Highlander">
+          </a>
+          <h3>La Prisonnière du Highlander</h3>
+          <p class="category">Romance historique</p>
+          <p class="excerpt">
+            Capturée dans l’Écosse des clans, une jeune femme voit
+            son destin bouleversé lorsqu’un redoutable highlander
+            entre dans sa vie. Entre danger, passion et loyauté,
+            leurs chemins pourraient bien se rejoindre.
+          </p>
+          <a class="btn" href="https://amzn.to/3P25zjB" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
         <article class="card book-card" data-category="fantasy">
-
-        <a href="https://amzn.to/4lh67hG" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/eldritch.jpg" alt="Eldritch - Keri Lake">
-        </a>
-
-        <h3>Eldritch</h3>
-
-        <p class="category">Fantasy sombre</p>
-
-        <p class="excerpt">
-        Dans un monde où d’anciennes forces obscures
-        s’éveillent peu à peu, une femme se retrouve
-        liée à un pouvoir capable de réveiller des
-        créatures venues d’un autre âge.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4lh67hG" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
+          <a href="https://amzn.to/4lh67hG" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/eldritch.jpg" alt="Eldritch - Keri Lake">
+          </a>
+          <h3>Eldritch</h3>
+          <p class="category">Fantasy sombre</p>
+          <p class="excerpt">
+            Dans un monde où d’anciennes forces obscures
+            s’éveillent peu à peu, une femme se retrouve
+            liée à un pouvoir capable de réveiller des
+            créatures venues d’un autre âge.
+          </p>
+          <a class="btn" href="https://amzn.to/4lh67hG" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
         <article class="card book-card" data-category="science-fiction">
-
-        <a href="https://amzn.to/3OSf8lb" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/monolith-la-decouverte.jpg" alt="Monolith – La Découverte">
-        </a>
-
-        <h3>Monolith – La Découverte</h3>
-
-        <p class="category">Science-fiction</p>
-
-        <p class="excerpt">
-        La découverte d’un mystérieux monolithe bouleverse
-        les certitudes scientifiques. Une expédition se lance
-        pour comprendre son origine et les secrets qu’il
-        pourrait révéler sur l’univers.
-        </p>
-
-        <a class="btn" href="https://amzn.to/3OSf8lb" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
+          <a href="https://amzn.to/3OSf8lb" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/monolith-la-decouverte.jpg" alt="Monolith – La Découverte">
+          </a>
+          <h3>Monolith – La Découverte</h3>
+          <p class="category">Science-fiction</p>
+          <p class="excerpt">
+            La découverte d’un mystérieux monolithe bouleverse
+            les certitudes scientifiques. Une expédition se lance
+            pour comprendre son origine et les secrets qu’il
+            pourrait révéler sur l’univers.
+          </p>
+          <a class="btn" href="https://amzn.to/3OSf8lb" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
         <article class="card book-card" data-category="science-fiction">
-
-        <a href="https://amzn.to/4rX3rbD" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/la-stele-noire.jpg" alt="La Stèle Noire - Monolith">
-        </a>
-
-        <h3>La Stèle Noire</h3>
-
-        <p class="category">Science-fiction</p>
-
-        <p class="excerpt">
-        La découverte d’une étrange stèle noire intrigue
-        les scientifiques du monde entier. Une expédition
-        est envoyée pour comprendre son origine et les
-        mystères qu’elle pourrait révéler.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4rX3rbD" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
+          <a href="https://amzn.to/4rX3rbD" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/la-stele-noire.jpg" alt="La Stèle Noire - Monolith">
+          </a>
+          <h3>La Stèle Noire</h3>
+          <p class="category">Science-fiction</p>
+          <p class="excerpt">
+            La découverte d’une étrange stèle noire intrigue
+            les scientifiques du monde entier. Une expédition
+            est envoyée pour comprendre son origine et les
+            mystères qu’elle pourrait révéler.
+          </p>
+          <a class="btn" href="https://amzn.to/4rX3rbD" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
-        <article class="card book-card" data-category="mystères">
-
-        <a href="https://amzn.to/4rcCkb9" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/les-mysteres-de-byton-cove.jpg" alt="Les Mystères de Byton Cove - La nuit de la disparition">
-        </a>
-
-        <h3>Les Mystères de Byton Cove</h3>
-
-        <p class="category">Mystère</p>
-
-        <p class="excerpt">
-        Dans la petite ville côtière de Byton Cove,
-        une disparition mystérieuse bouleverse la
-        tranquillité apparente des habitants et
-        révèle des secrets longtemps cachés.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4rcCkb9" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/4rcCkb9" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/les-mysteres-de-byton-cove.jpg" alt="Les Mystères de Byton Cove - La nuit de la disparition">
+          </a>
+          <h3>Les Mystères de Byton Cove</h3>
+          <p class="category">Mystère</p>
+          <p class="excerpt">
+            Dans la petite ville côtière de Byton Cove,
+            une disparition mystérieuse bouleverse la
+            tranquillité apparente des habitants et
+            révèle des secrets longtemps cachés.
+          </p>
+          <a class="btn" href="https://amzn.to/4rcCkb9" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
         <article class="card book-card" data-category="jeunesse">
-
-        <a href="https://amzn.to/4rkFWI9" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/enigmes-pour-ados-malins.jpg" alt="Énigmes pour Ados Malins">
-        </a>
-
-        <h3>Énigmes pour Ados Malins</h3>
-
-        <p class="category">Jeunesse / Jeux</p>
-
-        <p class="excerpt">
-        200 casse-têtes, enquêtes policières et jeux
-        de logique conçus pour stimuler l’esprit des
-        adolescents tout en s’amusant à résoudre
-        de nombreux mystères.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4rkFWI9" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
+          <a href="https://amzn.to/4rkFWI9" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/enigmes-pour-ados-malins.jpg" alt="Énigmes pour Ados Malins">
+          </a>
+          <h3>Énigmes pour Ados Malins</h3>
+          <p class="category">Jeunesse / Jeux</p>
+          <p class="excerpt">
+            200 casse-têtes, enquêtes policières et jeux
+            de logique conçus pour stimuler l’esprit des
+            adolescents tout en s’amusant à résoudre
+            de nombreux mystères.
+          </p>
+          <a class="btn" href="https://amzn.to/4rkFWI9" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
         <article class="card book-card" data-category="jeunesse">
-
-        <a href="https://amzn.to/4bfjVVp" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/gaspard-10-ans-voyageur-du-temps.jpg" alt="Gaspard, 10 ans, voyageur du temps">
-        </a>
-
-        <h3>Gaspard, 10 ans, voyageur du temps</h3>
-
-        <p class="category">Jeunesse fantastique</p>
-
-        <p class="excerpt">
-        À seulement dix ans, Gaspard découvre
-        un pouvoir incroyable : voyager dans le temps.
-        Chaque aventure l’entraîne vers des époques
-        et des mystères qu’il devra comprendre.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4bfjVVp" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
+          <a href="https://amzn.to/4bfjVVp" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/gaspard-10-ans-voyageur-du-temps.jpg" alt="Gaspard, 10 ans, voyageur du temps">
+          </a>
+          <h3>Gaspard, 10 ans, voyageur du temps</h3>
+          <p class="category">Jeunesse fantastique</p>
+          <p class="excerpt">
+            À seulement dix ans, Gaspard découvre
+            un pouvoir incroyable : voyager dans le temps.
+            Chaque aventure l’entraîne vers des époques
+            et des mystères qu’il devra comprendre.
+          </p>
+          <a class="btn" href="https://amzn.to/4bfjVVp" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
         <article class="card book-card" data-category="jeunesse">
-
-        <a href="https://amzn.to/4sv9e8b" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/le-secret-de-la-foret-magique.jpg" alt="Le Secret de la Forêt Magique">
-        </a>
-
-        <h3>Le Secret de la Forêt Magique</h3>
-
-        <p class="category">Jeunesse fantastique</p>
-
-        <p class="excerpt">
-        Au cœur d’une forêt mystérieuse,
-        un jeune héros découvre un secret
-        ancien qui pourrait réveiller des
-        forces oubliées depuis des siècles.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4sv9e8b" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
+          <a href="https://amzn.to/4sv9e8b" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/le-secret-de-la-foret-magique.jpg" alt="Le Secret de la Forêt Magique">
+          </a>
+          <h3>Le Secret de la Forêt Magique</h3>
+          <p class="category">Jeunesse fantastique</p>
+          <p class="excerpt">
+            Au cœur d’une forêt mystérieuse,
+            un jeune héros découvre un secret
+            ancien qui pourrait réveiller des
+            forces oubliées depuis des siècles.
+          </p>
+          <a class="btn" href="https://amzn.to/4sv9e8b" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
         <article class="card book-card" data-category="jeunesse">
-
-        <a href="https://amzn.to/4utQ7x8" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/lucie-et-le-miroir-brise.jpg" alt="Lucie et le miroir brisé">
-        </a>
-
-        <h3>Lucie et le miroir brisé</h3>
-
-        <p class="category">Jeunesse fantastique</p>
-
-        <p class="excerpt">
-        Lorsque Lucie découvre un miroir étrange,
-        un passage vers un monde fantastique
-        s’ouvre devant elle. Mais chaque secret
-        révélé pourrait changer son destin.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4utQ7x8" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        
+          <a href="https://amzn.to/4utQ7x8" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/lucie-et-le-miroir-brise.jpg" alt="Lucie et le miroir brisé">
+          </a>
+          <h3>Lucie et le miroir brisé</h3>
+          <p class="category">Jeunesse fantastique</p>
+          <p class="excerpt">
+            Lorsque Lucie découvre un miroir étrange,
+            un passage vers un monde fantastique
+            s’ouvre devant elle. Mais chaque secret
+            révélé pourrait changer son destin.
+          </p>
+          <a class="btn" href="https://amzn.to/4utQ7x8" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
         </article>
 
         <article class="card book-card" data-category="roman">
-
           <a href="https://amzn.to/40d805p" target="_blank" rel="nofollow sponsored noopener">
-            <img src="images/juste-apres-lorage.jpg" alt="Couverture du livre Juste après l’orage">
+            <img src="images/juste-apres-lorage.jpg" alt="Juste après l’orage">
           </a>
-
           <h3>Juste après l’orage</h3>
-
           <p class="category">Roman</p>
-
           <p class="excerpt">
-            Un récit touchant sur la résilience et la reconstruction après les tempêtes de la vie. 
+            Un récit touchant sur la résilience et la reconstruction après les tempêtes de la vie.
             Entre émotions et espoir, ce roman explore la capacité humaine à se relever et à retrouver la lumière.
           </p>
-
           <a class="btn" href="https://amzn.to/40d805p" target="_blank" rel="nofollow sponsored noopener">
             Voir sur Amazon
           </a>
-          </article>
-
-        <article class="card book-card" data-category="guides">
-
-        <a href="https://amzn.to/4bt3hCT" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/le-potager-bible.jpg" alt="Le Potager, la bible pour débuter - Thomas Noclercq">
-        </a>
-
-        <h3>Le Potager, la bible pour débuter</h3>
-
-        <p class="category">Guide jardin</p>
-
-        <p class="excerpt">
-        Un guide clair pour apprendre à créer
-        et entretenir un potager productif.
-        Idéal pour débuter et comprendre les
-        bases du jardinage naturel.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4bt3hCT" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
         </article>
 
         <article class="card book-card" data-category="guides">
-
-        <a href="https://amzn.to/4lbz7Y2" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/apiculture-pour-debutants.jpg" alt="L’Apiculture pour débutants">
-        </a>
-
-        <h3>L’Apiculture pour débutants</h3>
-
-        <p class="category">Guide nature</p>
-
-        <p class="excerpt">
-        Un guide pratique pour découvrir l’apiculture,
-        apprendre à installer ses premières ruches
-        et comprendre les bases de l’élevage des abeilles.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4lbz7Y2" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        </article>
-
-        <article class="card book-card" data-category="guides">
-
-        <a href="https://amzn.to/4smYh8C" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/plantes-melliferes-mois-par-mois.jpg" alt="Plantes mellifères mois par mois">
-        </a>
-
-        <h3>Plantes mellifères mois par mois</h3>
-
-        <p class="category">Guide jardin</p>
-
-        <p class="excerpt">
-        Un guide pratique pour choisir les plantes
-        qui nourrissent les abeilles tout au long
-        de l’année et créer un jardin favorable
-        à la biodiversité.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4smYh8C" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        </article>
-
-        <article class="card book-card" data-category="guides">
-
-        <a href="https://amzn.to/4suZKtw" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/traite-rustica-arbres-fruitiers.jpg" alt="Le traité Rustica des arbres fruitiers">
-        </a>
-
-        <h3>Le traité Rustica des arbres fruitiers</h3>
-
-        <p class="category">Guide jardin</p>
-
-        <p class="excerpt">
-        Un guide complet pour planter, tailler
-        et entretenir les arbres fruitiers.
-        Idéal pour créer un verger productif
-        et réussir ses récoltes au jardin.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4suZKtw" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        </article>
-
-        <article class="card book-card" data-category="science-fiction">
-
-        <img src="images/aurora.jpg" alt="Aurora - Kim Stanley Robinson">
-
-        <h3>Aurora</h3>
-
-        <p class="category">Science-fiction</p>
-
-        <p class="excerpt">
-        Un immense vaisseau transporte l’humanité vers une nouvelle planète.
-        Mais le voyage interstellaire révèle des défis inattendus.
-        Entre science, survie et espoir, l’avenir de la mission devient incertain.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4b7zeiO" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-        </article>
-
-        <article class="card book-card" data-category="science-fiction">
-
-        <a href="https://amzn.to/47fWQk6" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/lhomme-qui-crea-dieu.jpg" alt="L’homme qui créa Dieu - Frank Herbert">
-        </a>
-
-        <h3>L’homme qui créa Dieu</h3>
-
-        <p class="category">Science-fiction</p>
-
-        <p class="excerpt">
-        Dans un monde façonné par le pouvoir et la foi,
-        un homme se retrouve au cœur d’un destin capable
-        de bouleverser l’équilibre d’un empire entier.
-        </p>
-
-        <a class="btn" href="https://amzn.to/47fWQk6" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        </article>
-
-        <article class="card book-card" data-category="mystères">
-
-        <img src="images/les-heritiers-du-silence.jpg" alt="Les Héritiers du Silence">
-
-        <h3>Les Héritiers du Silence</h3>
-
-        <p class="category">Thriller</p>
-
-        <p class="excerpt">
-        Une enquête contemporaine qui plonge dans des secrets
-        enfouis depuis des générations. Entre mémoire, histoire
-        et révélations troublantes, la vérité pourrait tout changer.
-        </p>
-
-        <a class="btn" href="https://amzn.to/47iQPTL" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-        </article>
-
-        
-        <article class="card book-card" data-category="fantasy">
-
-        <a href="https://amzn.to/4le9XYV" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/lacademie-des-dragons.jpg" alt="L'académie des dragons - Kyra Stormrider">
-        </a>
-
-        <h3>L'académie des dragons</h3>
-
-        <p class="category">Fantasy</p>
-
-        <p class="excerpt">
-        Dans une académie où les jeunes guerriers apprennent
-        à maîtriser les dragons, une élève découvre que son
-        destin pourrait changer l’équilibre du royaume.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4le9XYV" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        </article>
-
-        <article class="card book-card" data-category="fantasy">
-
-        <a href="https://amzn.to/4cxHWcA" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/le-secret-du-faucon.jpg" alt="Le Secret du Faucon">
-        </a>
-
-        <h3>Le Secret du Faucon</h3>
-
-        <p class="category">Fantasy</p>
-
-        <p class="excerpt">
-        Dans un royaume traversé par les intrigues et les
-        pouvoirs anciens, un jeune héros découvre un secret
-        capable de bouleverser l’équilibre des royaumes.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4cxHWcA" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        </article>
-
-        <article class="card book-card" data-category="mystères">
-
-        <img src="images/outsphere.jpg" alt="Outsphere - Fernando Gamboa">
-
-        <h3>Outsphere</h3>
-
-        <p class="category">Aventure / Mystère</p>
-
-        <p class="excerpt">
-        Dans un futur dominé par les technologies et les empires galactiques,
-        l’humanité explore les frontières de l’univers. Entre secrets,
-        conspirations et découvertes scientifiques, une mission pourrait
-        changer le destin de toute la civilisation.
-        </p>
-
-        <a class="btn" href="https://amzn.to/3N1H3P8" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        </article>
-
-        <article class="card book-card" data-category="fantasy">
-
-        <a href="https://amzn.to/4rUJstY" target="_blank" rel="nofollow sponsored noopener">
-        <img src="images/le-tournoi-des-alchimistes.jpg" alt="Le tournoi des alchimistes - Élara Delysian">
-        </a>
-
-        <h3>Le tournoi des alchimistes</h3>
-
-        <p class="category">Fantasy</p>
-
-        <p class="excerpt">
-        Dans un royaume où la magie alchimique décide du pouvoir,
-        les meilleurs apprentis s’affrontent lors d’un tournoi
-        mystérieux qui pourrait changer le destin du monde.
-        </p>
-
-        <a class="btn" href="https://amzn.to/4rUJstY" target="_blank" rel="nofollow sponsored noopener">
-        Voir sur Amazon
-        </a>
-
-        </article>
-
-        <article class="card book-card" data-category="mystères">
-
-          <a href="https://amzn.to/4ldOqPS" target="_blank" rel="nofollow sponsored noopener">
-          <img src="images/le-passager-sans-visage.jpg" alt="Le Passager sans visage - Nicolas Beuglet">
+          <a href="https://amzn.to/4bt3hCT" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/le-potager-bible.jpg" alt="Le Potager, la bible pour débuter">
           </a>
-
-          <h3>Le Passager sans visage</h3>
-
-          <p class="category">Thriller</p>
-
+          <h3>Le Potager, la bible pour débuter</h3>
+          <p class="category">Guide jardin</p>
           <p class="excerpt">
-          Une enquête étrange conduit une inspectrice au cœur
-          d’un mystère qui dépasse toute logique. Plus elle
-          avance, plus les révélations deviennent troublantes.
+            Un guide clair pour apprendre à créer
+            et entretenir un potager productif.
+            Idéal pour débuter et comprendre les
+            bases du jardinage naturel.
           </p>
-
-          <a class="btn" href="https://amzn.to/4ldOqPS" target="_blank" rel="nofollow sponsored noopener">
-          Voir sur Amazon
+          <a class="btn" href="https://amzn.to/4bt3hCT" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
           </a>
+        </article>
 
-          </article>
+        <article class="card book-card" data-category="guides">
+          <a href="https://amzn.to/4lbz7Y2" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/apiculture-pour-debutants.jpg" alt="L’Apiculture pour débutants">
+          </a>
+          <h3>L’Apiculture pour débutants</h3>
+          <p class="category">Guide nature</p>
+          <p class="excerpt">
+            Un guide pratique pour découvrir l’apiculture,
+            apprendre à installer ses premières ruches
+            et comprendre les bases de l’élevage des abeilles.
+          </p>
+          <a class="btn" href="https://amzn.to/4lbz7Y2" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="guides">
+          <a href="https://amzn.to/4smYh8C" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/plantes-melliferes-mois-par-mois.jpg" alt="Plantes mellifères mois par mois">
+          </a>
+          <h3>Plantes mellifères mois par mois</h3>
+          <p class="category">Guide jardin</p>
+          <p class="excerpt">
+            Un guide pratique pour choisir les plantes
+            qui nourrissent les abeilles tout au long
+            de l’année et créer un jardin favorable
+            à la biodiversité.
+          </p>
+          <a class="btn" href="https://amzn.to/4smYh8C" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="guides">
+          <a href="https://amzn.to/4suZKtw" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/traite-rustica-arbres-fruitiers.jpg" alt="Le traité Rustica des arbres fruitiers">
+          </a>
+          <h3>Le traité Rustica des arbres fruitiers</h3>
+          <p class="category">Guide jardin</p>
+          <p class="excerpt">
+            Un guide complet pour planter, tailler
+            et entretenir les arbres fruitiers.
+            Idéal pour créer un verger productif
+            et réussir ses récoltes au jardin.
+          </p>
+          <a class="btn" href="https://amzn.to/4suZKtw" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="science-fiction">
+          <a href="https://amzn.to/4b7zeiO" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/aurora.jpg" alt="Aurora - Kim Stanley Robinson">
+          </a>
+          <h3>Aurora</h3>
+          <p class="category">Science-fiction</p>
+          <p class="excerpt">
+            Un immense vaisseau transporte l’humanité vers une nouvelle planète.
+            Mais le voyage interstellaire révèle des défis inattendus.
+            Entre science, survie et espoir, l’avenir de la mission devient incertain.
+          </p>
+          <a class="btn" href="https://amzn.to/4b7zeiO" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="science-fiction">
+          <a href="https://amzn.to/47fWQk6" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/lhomme-qui-crea-dieu.jpg" alt="L’homme qui créa Dieu">
+          </a>
+          <h3>L’homme qui créa Dieu</h3>
+          <p class="category">Science-fiction</p>
+          <p class="excerpt">
+            Dans un monde façonné par le pouvoir et la foi,
+            un homme se retrouve au cœur d’un destin capable
+            de bouleverser l’équilibre d’un empire entier.
+          </p>
+          <a class="btn" href="https://amzn.to/47fWQk6" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/47iQPTL" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/les-heritiers-du-silence.jpg" alt="Les Héritiers du Silence">
+          </a>
+          <h3>Les Héritiers du Silence</h3>
+          <p class="category">Thriller</p>
+          <p class="excerpt">
+            Une enquête contemporaine qui plonge dans des secrets
+            enfouis depuis des générations. Entre mémoire, histoire
+            et révélations troublantes, la vérité pourrait tout changer.
+          </p>
+          <a class="btn" href="https://amzn.to/47iQPTL" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="fantasy">
+          <a href="https://amzn.to/4le9XYV" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/lacademie-des-dragons.jpg" alt="L'académie des dragons">
+          </a>
+          <h3>L'académie des dragons</h3>
+          <p class="category">Fantasy</p>
+          <p class="excerpt">
+            Dans une académie où les jeunes guerriers apprennent
+            à maîtriser les dragons, une élève découvre que son
+            destin pourrait changer l’équilibre du royaume.
+          </p>
+          <a class="btn" href="https://amzn.to/4le9XYV" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="fantasy">
+          <a href="https://amzn.to/4cxHWcA" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/le-secret-du-faucon.jpg" alt="Le Secret du Faucon">
+          </a>
+          <h3>Le Secret du Faucon</h3>
+          <p class="category">Fantasy</p>
+          <p class="excerpt">
+            Dans un royaume traversé par les intrigues et les
+            pouvoirs anciens, un jeune héros découvre un secret
+            capable de bouleverser l’équilibre des royaumes.
+          </p>
+          <a class="btn" href="https://amzn.to/4cxHWcA" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/3N1H3P8" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/outsphere.jpg" alt="Outsphere - Fernando Gamboa">
+          </a>
+          <h3>Outsphere</h3>
+          <p class="category">Aventure / Mystère</p>
+          <p class="excerpt">
+            Dans un futur dominé par les technologies et les empires galactiques,
+            l’humanité explore les frontières de l’univers. Entre secrets,
+            conspirations et découvertes scientifiques, une mission pourrait
+            changer le destin de toute la civilisation.
+          </p>
+          <a class="btn" href="https://amzn.to/3N1H3P8" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="fantasy">
+          <a href="https://amzn.to/4rUJstY" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/le-tournoi-des-alchimistes.jpg" alt="Le tournoi des alchimistes">
+          </a>
+          <h3>Le tournoi des alchimistes</h3>
+          <p class="category">Fantasy</p>
+          <p class="excerpt">
+            Dans un royaume où la magie alchimique décide du pouvoir,
+            les meilleurs apprentis s’affrontent lors d’un tournoi
+            mystérieux qui pourrait changer le destin du monde.
+          </p>
+          <a class="btn" href="https://amzn.to/4rUJstY" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
+
+        <article class="card book-card" data-category="mysteres">
+          <a href="https://amzn.to/4ldOqPS" target="_blank" rel="nofollow sponsored noopener">
+            <img src="images/le-passager-sans-visage.jpg" alt="Le Passager sans visage">
+          </a>
+          <h3>Le Passager sans visage</h3>
+          <p class="category">Thriller</p>
+          <p class="excerpt">
+            Une enquête étrange conduit une inspectrice au cœur
+            d’un mystère qui dépasse toute logique. Plus elle
+            avance, plus les révélations deviennent troublantes.
+          </p>
+          <a class="btn" href="https://amzn.to/4ldOqPS" target="_blank" rel="nofollow sponsored noopener">
+            Voir sur Amazon
+          </a>
+        </article>
 
       </div>
+
+      <p id="noResultsMessage" class="gallery-intro center" style="display: none; margin-top: 30px;">
+        Aucun livre ne correspond à votre recherche.
+      </p>
     </section>
   </main>
 
